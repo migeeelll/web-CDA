@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    color: white;
+    background-color: #8DA3A6;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 2px solid #4B6777;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2D4C5E;
+    color: white;
+}
+
+td {
+    background-color: #EFF3F6;
+}
+
+.benchmarking, .calculations {
+    margin: 20px 0;
+}
+
+#btn-hitung {
+    padding: 10px 20px;
+    background-color: #4B6777;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-hitung:hover {
+    background-color: #2D4C5E;
+}

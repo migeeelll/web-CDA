@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmarking Table</title>
+    <link rel="stylesheet" href="dummy.css">
+</head>
+<body>
+    <button id="btn-hitung">Hitung</button>
+
+    <div class="main-content">
+        <div class="benchmarking">
+            <h3>Benchmarking Ratio:</h3>
+            <p>Pilih industri terlebih dahulu lalu tekan hitung sebagai acuan Benchmarking</p>
+        </div>
+        <div class="penghitungan">
+            <h3>Penghitungan:</h3>
+            <p><!-- Hasil penghitungan akan tampil di sini --></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("btn-hitung").addEventListener("click", function() {
+            document.querySelector(".main-content").innerHTML = `
+                <div class="benchmarking">
+                    <h3>Benchmarking Ratio:</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Perusahaan</th>
+                                <th>Negara</th>
+                                <th>2020</th>
+                                <th>2019</th>
+                                <th>2018</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>MORIKAWA ENTERPRISE INC.</td>
+                                <td>Japan</td>
+                                <td>0.50</td>
+                                <td>0.16</td>
+                                <td>0.40</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>K.M.R CO.,LTD</td>
+                                <td>Korea</td>
+                                <td>6.28</td>
+                                <td>2.24</td>
+                                <td>5.95</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>VEIVA SCIENTIFIC INDIA PRIVATE</td>
+                                <td>India</td>
+                                <td>8.86</td>
+                                <td>9.15</td>
+                                <td>9.80</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>WOORE TECHNOLOGIES CO.,LTD</td>
+                                <td>Korea</td>
+                                <td>14.78</td>
+                                <td>13.39</td>
+                                <td>27.38</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>GREPCOR, INC.</td>
+                                <td>Philippines</td>
+                                <td>14.45</td>
+                                <td>24.66</td>
+                                <td>19.72</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calculations">
+                    <h3>Penghitungan:</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Minimum</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kuartil 1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Kuartil 2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Kuartil 3</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Maksimum</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>`;
+        });
+    </script>
+</body>
+</html>

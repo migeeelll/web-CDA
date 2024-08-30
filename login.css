@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-image: url('asset/bg-login.png'); /* Set the background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+}
+
+/* Welcome Section */
+.welcome-section {
+    max-width: 50%;
+}
+
+.welcome-section h1 {
+    color: #FFC107;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Login Section */
+.login-section {
+    width: 35%;
+}
+
+.login-card {
+    background-color: #2D4C5E;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-card h2 {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    margin-top: 20px;
+}
+
+.login-form .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.form-group{
+    color: white;
+    text-shadow: 1px 1px #555;
+    
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form input:focus {
+    border-color: #FFC107;
+    outline: none;
+}
+
+.login-form .remember-me {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+
+.remember-me label {
+    margin-left: 8px; /* Beri jarak antara checkbox dan teks */
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.login-form .right-link {
+    color: #FFC107;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #FFC107;
+    border: none;
+    border-radius: 5px;
+    color: #2D4C5E;
+    font-size: 16px;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 750;
+}
+.social-login {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.atau{
+    color: white;
+    font-weight: 400;
+}
+.social-login button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.social-login button img {
+    width: 40px;
+}

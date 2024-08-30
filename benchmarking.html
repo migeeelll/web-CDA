@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmarking Data Pembanding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-left">
+                <img src="asset/Logo (1).png" alt="">
+            </div>
+            <div class="logo-right">
+                <div class="ID"><a href="#">IN|</a></div>
+                <div class="EN"><a href="">ENG</a></div>
+                <div class="email-info">
+                    <a href="mailto:cs@centraldataaccess.co.id">cs@centraldataaccess.co.id</a>
+                </div>
+                <li><a href="https://www.instagram.com/centraldataaccess/?hl=id"><img src="asset/IG.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com/@CentralDataAccess"><img src="asset/YT.png" alt=""></a></li>
+                <li><a href="https://www.tiktok.com/@centraldataaccessofc"><img src="asset/TT.png" alt=""></a></li>
+                <li><a href="#"><img src="asset/IN.png" alt=""></a></li>
+            </div>
+        </div>
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <ul class="nav-links">
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Jasa Kami</a></li>
+                    <div class="tab"><a href="#">Data Pembanding</a></div>
+                    <li><a href="#">Info Perpajakan</a></li>
+                    <li><a href="#">Kontak Kami</a></li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <img src="asset/telpon.png" alt="">
+                <div class="contact-info">
+                    <span><a href="tel:0822-1001-9797">0822-1001-9797</a></span>
+                    <span><a href="tel:0822-1001-9696">0822-1001-9696</a></span>
+                </div>
+                <div class="btn-masuk">
+                    <a href="login.html">Masuk <img src="asset/Vector.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <img src="asset/baner.png" alt="Banner Image">
+        <div class="layer"></div>
+        <div class="banner-text">
+            <div class="highlight">
+                <h1>Benchmarking</h1>
+            </div>
+            <h1>Data Pembanding Manufaktur Industri Garmen</h1>
+            <p>Dokumen Penetapan Harga Transfer menguji kewajaran transaksi afiliasi yang dilakukan dengan mencari
+                perusahaan pembanding yang sering disebut dengan Benchmarking Data Pembanding. Data Pembanding Eksternal
+                yang tersedia diperoleh dari BvD TPCatalyst yang kemudian diolah menjadi Benchmarking Data Pembanding
+                yang di klasifikasikan berdasarkan klasifikasi usaha.</p>
+            <p>Berdasarkan PMK No. 172 Tahun 2023 tentang Penerapan Prinsip Kewajaran dan Kelaziman Usaha Dalam
+                Transaksi Yang Dipengaruhi Hubungan Istimewa, penentuan harga transfer yang memenuhi Prinsip Kewajaran
+                dan Kelaziman Usaha menggunakan titik paling tepat di dalam Benchmarking atau titik tengah (median) di
+                dalam rentang kewajaran.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>INDUSTRY PEMBANDING</h2>
+            <div class="dropdown-container">
+                <select id="jenis-usaha">
+                    <option value="option">Jenis Kegiatan Usaha</option>
+                    <option value="option1">Manufaktur</option>
+                    <option value="option2">Distributor</option>
+                    <option value="option2">Jasa</option>
+                </select>
+
+
+                <select id="klasifikasi-usaha">
+                    <option value="option">Klasifikasi Usaha</option>
+                    <option value="option1">Garmen</option>
+                    <option value="option2">Pertanian</option>
+                    <option value="option3">Furniture</option>
+                    <option value="option1">Garmen</option>
+                    <option value="option2">Pertanian</option>
+                    <option value="option3">Furniture</option>
+                    <option value="option1">Garmen</option>
+                    <option value="option2">Pertanian</option>
+                    <option value="option3">Furniture</option>
+                    <option value="option1">Garmen</option>
+                    <option value="option2">Pertanian</option>
+                    <option value="option3">Furniture</option>
+                </select>
+
+                <select id="ratio">
+                    <option value="option">Ratio</option>
+                    <option value="option1">Resale Price Methode</option>
+                    <option value="option2">Cost Plus Methode</option>
+                    <option value="option2">Return On Sales</option>
+                </select>
+                <div class="timeline-container">
+                    <h3>Tahun</h3>
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="yellow-line"></div>
+                        <div id="start-handle"></div>
+                        <div id="end-handle"></div>
+                    </div>
+                    <div class="year-labels">
+                        <span>2017</span>
+                        <span>2018</span>
+                        <span>2019</span>
+                        <span>2020</span>
+                        <span>2021</span>
+                        <span>2022</span>
+                        <span>2023</span>
+                        <span>2024</span>
+                    </div>
+                </div>
+
+                <h2>Laporan Keuangan Perusahaan</h2>
+                <label for="penjualan">Penjualan</label>
+                <div class="input-container">
+                    <input type="number" class="number-input" id="penjualan" value="0">
+                    <div class="arrows">
+                        <div class="arrow-up" onclick="increment('penjualan')"></div>
+                        <div class="arrow-down" onclick="decrement('penjualan')"></div>
+                    </div>
+                </div>
+                <label for="harga">Harga Pokok Penjualan</label>
+                <div class="input-container">
+                    <input type="number" class="number-input" id="harga" value="0">
+                    <div class="arrows">
+                        <div class="arrow-up" onclick="increment('harga')"></div>
+                        <div class="arrow-down" onclick="decrement('harga')"></div>
+                    </div>
+                </div>
+                <label for="penjualan">Beban Operasional</label>
+                <div class="input-container">
+                    <input type="number" class="number-input" id="beban" value="0">
+                    <div class="arrows">
+                        <div class="arrow-up" onclick="increment('beban')"></div>
+                        <div class="arrow-down" onclick="decrement('beban')"></div>
+                    </div>
+                </div>
+
+                <input type="text" placeholder="Laba Kotor" readonly>
+                <input type="text" placeholder="Laba Operasional" readonly>
+                <input type="text" placeholder="Tested Party" readonly>
+
+            </div>
+            <button id="btn-hitung">Hitung</button>
+        </div>
+        <div class="main-content">
+            <div class="benchmarking">
+                <h3>Benchmarking Ratio:</h3>
+                <p>Pilih industri terlebih dahulu lalu tekan hitung sebagai acuan Benchmarking</p>
+            </div>
+            <div class="penghitungan">
+                <h3>Penghitungan:</h3>
+                <p><!-- Hasil penghitungan akan tampil di sini --></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
